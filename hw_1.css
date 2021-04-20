@@ -16,13 +16,20 @@
 }
 
 .L_Box {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     float: left;
     margin-right: 10px;
+    position: relative;
+}
+
+.slide{
+    position: absolute;
+    top: 100px;
+    left: 151px;
 }
 
 .R_Box {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     padding-top: 100px;
     padding-bottom: 100px;
     float: left;
@@ -70,4 +77,17 @@
 
 .line2 {
     text-decoration: none;
+}
+
+.imgb{
+    width: 310px;
+    height: 580px;
+}
+  
+.imgw{
+    width: 310px;
+    height: 560px;
+    position: relative;
+    bottom: 565px;
+    left: 70px;
 }

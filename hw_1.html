@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <title>OYR_과제1_instagram</title>
     <link rel="stylesheet" href="hw_1.css">
-    <script scr="hw_1.js"></script>
+    <script src="hw_1.js"></script>
 </head>
-<body class="Outer">
+
+<body class="Outer" onload="showImage()">
     <div class="Inner">
 
         <div class="L_Box">
             <img src="hw_1_1.png">
-            <img id="imgs" onload="showImage()">
+            <img id="imgs" border="0" class = "slide">
         </div>
         
         <div class="R_Box">
@@ -30,6 +31,8 @@
                 <p style="text-align: center"><a class="line2" href="">비밀번호를 잊으셨나요?</a></p>
             </form>
         </div>
+
+        <img id="imgs">
 
     </div>
 </body>
