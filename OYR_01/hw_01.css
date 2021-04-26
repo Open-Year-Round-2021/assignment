@@ -6,13 +6,16 @@
 
 .Outer {
     /* padding: 0; */
-    display: flex;
 }
 
 .Inner {
     margin: auto;
-    align-items: center;
+    position: absolute;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 200vh;
 }
 
 .L_Box {

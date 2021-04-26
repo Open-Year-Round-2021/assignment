@@ -1,0 +1,117 @@
+.Top{
+    height: 70px;
+    border-bottom: 1px solid #DBDBDB;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home{
+    height : 70px;
+    float : left;
+    display: flex;
+    /* background-color: red; */
+}
+
+.search_box{
+    width: 300px;
+    display: flex;
+    float: center;
+    align-items: center;
+}
+
+.Top_rightImg{
+    width : 70px;
+    height : 70px;
+    object-fit : cover;
+    background-color: white;
+    float: right;
+}
+
+.Out{
+    display : flex;
+}
+
+.Out_box{
+    margin : auto;
+    align-items : center;
+    display: flex;
+    flex-direction: column;
+}
+
+.Feed{
+    float : center;
+    border : 1px solid #DBDBDB;
+    padding : 5px;
+}
+
+.Feed_profile{
+    width : 50px;
+    height : 50px;
+    margin : 5px;
+    border-radius : 70%;
+    overflow : hidden;
+    float : left;
+}
+
+.Profile{
+    width : 100%;
+    height : 100%;
+    object-fit : cover;
+    margin-left : left;
+}
+
+.Feed_profileName{
+    line-height: 55px;
+    float : left;
+}
+
+.icon-react{
+    width : 50px;
+    height : 50px;
+    margin : 5px;
+    float : right;
+}
+
+.modalbutton{
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    float : right;
+}
+
+.likes{
+    width : 50px;
+    height : 50px;
+    margin : 5px;
+    float : left;
+}
+
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.modal-content {
+    background: white;
+    padding: 24px 16px;
+    border-radius: 4px;
+    width: 320px;
+}
+  
+.modal-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+  
+.close-wrapper {
+    text-align: right;
+}
