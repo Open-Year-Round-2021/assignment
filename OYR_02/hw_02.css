@@ -40,7 +40,7 @@
 }
 
 #open{
-    width : 50px;
+    width : 70px;
     height : 50px;
     margin : 5px;
     float : right;
@@ -64,23 +64,19 @@
     align-items: center;
     justify-content: center;
   }
-  
-  .modal {
+
+.modal {
     background: white;
     padding: 24px 16px;
     border-radius: 4px;
     width: 320px;
-  }
+}
   
-  .modal-title {
+.modal-title {
     font-size: 24px;
     font-weight: bold;
-  }
+}
   
-  .modal p {
-    font-size: 16px;
-  }
-  
-  .close-wrapper {
+.close-wrapper {
     text-align: right;
-  }
+}
