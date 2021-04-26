@@ -1,0 +1,86 @@
+.Out{
+    display : flex;
+}
+.Out_box{
+    margin : auto;
+    align-items : center;
+    display: flex;
+}
+
+.Feed{
+    float : center;
+    border : 1px solid grey;
+    padding : 5px;
+    position : relative;
+}
+
+.Feed_upper{
+    position : flex;
+}
+
+.Feed_profile{
+    width : 50px;
+    height : 50px;
+    margin : 5px;
+    border-radius : 70%;
+    overflow : hidden;
+    float : left;
+}
+
+.Profile{
+    width : 100%;
+    height : 100%;
+    object-fit : cover;
+    margin-left : left;
+}
+
+.Feed_profileName{
+    line-height: 55px;
+    float : left;
+}
+
+#open{
+    width : 50px;
+    height : 50px;
+    margin : 5px;
+    float : right;
+}
+
+.likes{
+    width : 50px;
+    height : 50px;
+    margin : 5px;
+    float : left;
+}
+
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal {
+    background: white;
+    padding: 24px 16px;
+    border-radius: 4px;
+    width: 320px;
+  }
+  
+  .modal-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .modal p {
+    font-size: 16px;
+  }
+  
+  .close-wrapper {
+    text-align: right;
+  }
