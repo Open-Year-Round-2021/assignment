@@ -13,12 +13,28 @@ function change(){
     imgCnt = 0;
 }
 
-const open = document.getElementById("open");
-const close = document.getElementById("close");
-const modal = document.querySelector(".modal-wrapper");
-open.onclick = () => {
-  modal.style.display = "flex";
-};
-close.onclick = () => {
-  modal.style.display = "none";
-};
+// var modal = document.getElementById('myModal');
+// var btn = document.getElementById('myBtn');
+// var span = document.getElementById('close');
+
+// btn.onclick = function(){
+//     modal.style.display = "block";
+// }
+
+// span.onclick = function() {
+//     modal.style.display = 'none';
+// }
+
+// window.onclick = function(event){
+//     if(event.target == modal){
+//         modal.style.display = 'none';
+//     }
+// }
+
+function function_modal(){
+    document.getElementById('myModal').style.display="flex";
+}
+
+function function_close(){
+    document.getElementById('myModal').style.display="none";
+}
