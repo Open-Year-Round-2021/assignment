@@ -1,16 +1,30 @@
 let imgArray = new Array();
-imgArray[0] = "instagram_likes1.png";
-imgArray[1] = "instagram_likes2.png";
+imgArray[0] = "img/instagram_likes1.png";
+imgArray[1] = "img/instagram_likes2.png";
 
 let imgCnt = 0;
 
-function change(){
-    let objImg = document.getElementById("change_likes");
-    objImg.src = imgArray[imgCnt];
-    if(imgCnt == 0)
-    imgCnt = 1;
-    else if(imgCnt == 1)
-    imgCnt = 0;
+let likes = {
+    change: function (objImg){
+        if(imgCnt == 0)
+            imgCnt = 1;
+        else if(imgCnt == 1)
+            imgCnt = 0;
+        objImg.src = imgArray[imgCnt];
+    }
+}
+
+function change1(){
+    let objImg = document.getElementById('likes1');
+    likes.change(objImg);
+}
+function change2(){
+    let objImg = document.getElementById('likes2');
+    likes.change(objImg);
+}
+function change3(){
+    let objImg = document.getElementById('likes3');
+    likes.change(objImg);
 }
 
 // var modal = document.getElementById('myModal');

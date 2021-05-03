@@ -11,14 +11,8 @@
 .Inner {
     margin: auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
-}
-
-.L_Box {
-    /* border: 1px solid green; */
-    float: left;
-    margin-right: 10px;
-    position: relative;
 }
 
 .slide{
@@ -27,17 +21,19 @@
     left: 151px;
 }
 
-.R_Box {
-    /* border: 1px solid green; */
-    padding-top: 100px;
-    padding-bottom: 100px;
-    float: left;
-    margin-right: 10px;
-    /* display: flex; */
+.Box {
+    width: 350px;
+    border : 1px solid #DBDBDB;
+    float: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .login_box{
-    width: 268px;
+    width: 280px;
     height: 38px;
     color: #999999;
     background-color: #FAFAFA;
@@ -45,14 +41,22 @@
     border-radius: 3px;
     margin: auto;
     padding: 7px;
+    display: flex;
+
+    background-image: url('');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size:30px;
+    
 }
+
 
 .Outer_login_btn {
     display: flex;
 }
 
 .login_btn {
-    width: 268px;
+    width: 280px;
     height: 30px;
     border-radius: 6px;
     border: none;
@@ -78,15 +82,8 @@
     text-decoration: none;
 }
 
-.imgb{
-    width: 310px;
-    height: 580px;
-}
-  
-.imgw{
-    width: 310px;
-    height: 560px;
-    position: relative;
-    bottom: 565px;
-    left: 70px;
+.notice {
+    width: 280px;
+    text-decoration-color: grey;
+    margin: auto;
 }

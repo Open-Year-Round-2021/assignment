@@ -1,0 +1,100 @@
+.Top{
+    width:100%;
+    height: 60px;
+    border-bottom: 1px solid #DBDBDB;
+    background-color: white;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.home{
+    height : 50px;
+    float : left;
+    display: flex;
+    /* background-color: red; */
+}
+
+.search_box{
+    width: 300px;
+    display: flex;
+    float: center;
+    align-items: center;
+}
+
+.Top_rightImg{
+    width : 50px;
+    height : 50px;
+    object-fit : cover;
+    background-color: white;
+    float: right;
+}
+
+.Out{
+    display : flex;
+    margin-top: 100px;
+    align-items : center;
+    display: flex;
+    flex-direction: column;
+}
+
+.Out_box{
+    width: 90%;
+    align-items : center;
+    display: flex;
+    flex-direction: column;
+}
+
+.user_profile{
+    width: 100%;
+    display: flex;
+    padding-bottom: 35px;
+    padding-left: 35px;
+    align-items: center;
+    vertical-align: middle;
+    justify-content:space-evenly;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.user{
+    width: 200px;
+    border-radius : 70%;
+    float: center;
+}
+
+.user_detail{
+    width: 400px;
+    text-align: start;
+}
+
+.user_select{
+    width: 800px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: space-evenly;
+}
+
+.select{
+    margin: auto;
+}
+
+.user_photo{
+    padding-top: 10px;
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+.user_img{
+    width:100%;
+    height:100%;
+}
