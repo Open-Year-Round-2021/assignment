@@ -1,13 +1,4 @@
 
-// function check_email(){
-//     let email = document.getElementById('user_email');
-//     if(email.value == '')
-//         email.style.backgroundImage = "url()";
-//     else if(email.value.includes('@') && email.value.includes('.'))
-//         email.style.backgroundImage = "url('img/pass.png')";
-//     else
-//         email.style.backgroundImage = "url('img/nonpass.png')";
-// }
 
 let check = {
     checkemail: function(temp){

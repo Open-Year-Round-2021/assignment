@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>instagram</title>
+    <link rel="shortcut icon" href="img/instagram_logo.png">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+</head>
+
+<body class="Outer" onload="showImage()">
+    <div class="Inner">
+
+        <div class="L_Box">
+            <img src="img/hw_01_01.png">
+            <img id="imgs" border="0" class = "slide">
+        </div>
+        
+        <div class="R_Box">
+            <form action= "/login_success" method= "POST">
+                <h1 style="text-align: center;">Instagram</h1>
+                <p><input type="text" name= "id" id= "user_id" class="login_box" placeholder="전화번호, 사용자 이름 또는 이메일"></p>
+                <p><input type="password" name= "pw" id= "user_pw" class="login_box" placeholder="비밀번호"></p>
+                <p class="Outer_login_btn"><button type="submit" class="login_btn" onclick= "sign_up()">로그인</button></p>
+                <div class="or">
+                    <p>
+                        <div class="line1"></div>
+                        <div class="line2">또는</div>
+                        <div class="line1"></div>
+                    </p>
+                </div>
+                <p style="text-align: center"><a class="line2" href="">비밀번호를 잊으셨나요?</a></p>
+            </form>
+        </div>
+
+        <img id="imgs">
+
+    </div>
+</body>
+</html>

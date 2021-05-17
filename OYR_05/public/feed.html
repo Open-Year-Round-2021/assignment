@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>instagram</title>
+    <link rel="shortcut icon" href="img/instagram_logo.png">
+    <link rel="stylesheet" href="feed.css">
+    <script src="feed.js"></script>
+</head>
+
+<body>
+    <div class="Top">
+        <div class= "Top_left">
+            <a href= "feed.html"><img class= "home" src="img/instagram_logoName.png"></a>
+        </div>
+        <!-- <div class= "Top_center">
+            <p><input class="search_box" placeholder="검색"></p>
+        </div> -->
+        <div id= "input" style="width: 300px; height:28px; background-color:#FAFAFA;">
+            <input id ="input_control" class = "input_box" type="text" style="width:300px; height:28px; background-color:#FAFAFA; text-align:center;"><div id="search">검색</div>
+        </div>
+
+        <div class= "Top_right">
+            <a href= "mypage.html"><img class = "Top_rightImg" src="img/instagram_feedProfile.jpg" style= "border-radius : 70%;"></a>
+            <a href= "https://www.instagram.com"><img class= "Top_rightImg" src="img/instagram_safari.png" ></a>
+            <a href= "https://www.instagram.com"><img class= "Top_rightImg" src="img/instagram_likes1.png"></a>
+            <a href= "https://www.instagram.com"><img class= "Top_rightImg" src="img/instagram_user.png"></a>
+        </div>
+    </div>
+    
+    <p></p>
+
+    <div class= "Out">
+        <div class= "Out_box">
+
+            <div class= "Feed">
+                <div class= "Feed_upper">
+
+                    <div class= "Feed_profile">
+                        <img class= "Profile" src= "img/instagram_feedProfile.jpg">
+                    </div>
+                    <div class= "Feed_profileName">
+                        USER_NAME
+                    </div>
+                    
+                    <button id= "myBtn1" class= "modalbutton" onclick="function_modal(myModal1)">
+                        <img class= "icon-react" src= "img/instagram_more.png">
+                    </button>
+
+                    <div id= "myModal1" class= "modal-wrapper" style= "display: none;" onclick="function_modal(myModal1)">
+                        <div class= "modal-content">
+                            <div class= "modal-title">I'm modal</div>
+                            <div class= "close-wrapper">
+                                <button id= "close1" onclick="function_modal(myModal1)">🍀</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <img src="img/instagram_feed.png">
+                
+
+                <div>좋아요<span class= "like_count1"></span></div>
+                <div class= "Feed_lower">
+                    <img id= "likes1" class= "likes" src= "img/instagram_likes1.png" onclick= "change1()">
+                </div>
+            </div>
+
+
+            <p></p>
+
+
+            <div class= "Feed">
+                <div class= "Feed_upper">
+
+                    <div class= "Feed_profile">
+                        <img class= "Profile" src= "img/instagram_feedProfile.jpg">
+                    </div>
+                    <div class= "Feed_profileName">
+                        USER_NAME
+                    </div>
+                    
+                    <button id= "myBtn2" class= "modalbutton" onclick="function_modal(myModal2)">
+                        <img class= "icon-react" src= "img/instagram_more.png">
+                    </button>
+                    <div id= "myModal2" class= "modal-wrapper" style= "display: none;" onclick="function_modal(myModal2)">
+                        <div class= "modal-content">
+                            <div class= "modal-title">I'm modal</div>
+                            <div class= "close-wrapper">
+                                <button id= "close2" onclick="function_modal(myModal2)">🍀</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <img src="img/instagram_feed2.png">
+                
+                <div>좋아요<span class= "like_count2"></span></div>
+                <div class = "Feed_lower">
+                    <img id= "likes2" class= "likes" src= "img/instagram_likes1.png" onclick= "change2()">
+                </div>
+            </div>
+
+
+            <p></p>
+
+
+            <div class= "Feed">
+                <div class= "Feed_upper">
+
+                    <div class= "Feed_profile">
+                        <img class= "Profile" src= "img/instagram_feedProfile.jpg">
+                    </div>
+                    <div class= "Feed_profileName">
+                        USER_NAME
+                    </div>
+                    
+                    <button id= "myBtn3" class= "modalbutton" onclick="function_modal(myModal3)">
+                        <img class= "icon-react" src= "img/instagram_more.png">
+                    </button>
+                    <div id= "myModal3" class= "modal-wrapper" style= "display: none;" onclick="function_modal(myModal3)">
+                        <div class= "modal-content">
+                            <div class= "modal-title">I'm modal</div>
+                            <div class= "close-wrapper">
+                                <button id= "close3" onclick="function_modal(myModal3)">🍀</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <img src="img/instagram_feed.png">
+                
+                <div>좋아요<span class= "like_count3"></span></div>
+                <div class = "Feed_lower">
+                    <img id= "likes3" class= "likes" src= "img/instagram_likes1.png" onclick= "change3()">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script>
+
+        // 검색창 기능
+        document.getElementById('input_control').addEventListener('focus',function(){
+            
+            if (document.getElementById('input_control').value == ''){
+                document.getElementById('search').style.display = 'block';
+                document.getElementById('search').style.marginLeft = '15px';
+            }
+        
+            else{
+                document.getElementById('search').style.display = 'none';
+            }
+        })
+        
+        document.getElementById('input_control').addEventListener('blur',function(){
+        
+            if (document.getElementById('input_control').value == ''){
+                document.getElementById('search').style.display = 'block';
+                document.getElementById('search').style.marginLeft = "140px";
+            }
+        
+            else{
+                document.getElementById('search').style.display = 'none';
+            }
+        })
+        
+        document.getElementById('input_control').addEventListener('keydown',function(){
+            document.getElementById('search').style.display = 'none';
+        })
+        
+    </script>
+</body>
+</html>
